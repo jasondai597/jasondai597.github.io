@@ -1,10 +1,22 @@
-W<!doctype html>
+<!doctype html>
 
 <!-- this is a comment for human! -->
 
 <html lang="en">
 
   <header>
+  <script src="jason.js">
+  function validate() {
+    if( document.getElementById('firstname').value.length == 0 ) {
+      alert( "Please print your first name!" );
+      }
+
+    if( document.getElementById('lastname').value.length == 0 ) {
+      alert( "Please print your last name!" );
+      }
+  }
+
+  </script>
     <title>Jason Dai's Portal</title>
     <link rel='stylesheet' href='css/master.css'>
     <link rel='FaviconIcon' href='favicon.ico' type='image/x-icon'>
@@ -12,20 +24,38 @@ W<!doctype html>
     <meta name='viewport' content='width=deivce-width, initial-scale=1, shrink-to-fit=no'>
     <meta name='name' content="Jason Dai's Portal">
     <meta name='robots' content='noindex, nofollow'>
+
+    </script>
   </header>
   <body>
-    <img src="images\banner.jpg" width="75%" alt="banner">
+    <img src="https://sbsurreystor.blob.core.windows.net/media/Default/fgg/8275/dragons.png" width="25%" alt="banner">
     <h1>Jason Dai's Portal</h1>
     <h2>About me</h2>
     <p>I am a grade 12 senior student in Fleetwood Park Secondary School</p>
     <p>I enjoy learning new coding algorithms, they practices my logical thinking skills</p>
     <p>I am currently building a website portfolio of my own</p>
-    <h2>Credentials and Portfolio</h2>
 
+    <form onsubmit="return validate()" method="post"> 
+      
+      <label for="firstname">First name:</label><br>
+      <input type="text" id="firstname" name="firstname"><br>
+      <label for="lastname">Last name:</label><br>
+      <input type="text" id="lastname" name="lastname"><br>
+      <label for="emailaddress">Email Address:</label><br>
+      <input type="text" id="emailaddress" name="Email Address"><br>
+      
+      <p><button id="TestButton">Submit</button></p>
+
+    </form>
+
+
+    <h2>Credentials and Portfolio</h2>
     <p><a href="resume.html">My Resume</a> | <a href="https://github.com/jasondai">My GitHub</a></p>
     <h2>Contact</h2>
-
-
+<!-- Form elements - Labels and input fields. Name the input fields something unique, which is the name that your javascript will use-->
+    <div id="MyField">Hello, here below is my email address, feel free to contact me</div>
+    
+    <br>
     <p>Email: <a href='mailto:jasondjx597@gmail.com'>jasondjx597@gmail.com</a></p>
   </body>
 
@@ -33,5 +63,7 @@ W<!doctype html>
     <hr>
     <code>Copyright (c) 2022 Jason Dai</copy>
   </footer>
+
+</html>
 
 </html>
