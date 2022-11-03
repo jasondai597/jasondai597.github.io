@@ -7,13 +7,17 @@
   <header>
   <script src="jason.js">
   function validate() {
-    if( document.getElementById('firstname').value.length == 0 ) {
-      alert( "Please print your first name!" );
-      }
+     if( document.getElementById('firstname').value.length == 0 ) {
+          alert( "Please print your first name!" );
+     }
 
-    if( document.getElementById('lastname').value.length == 0 ) {
-      alert( "Please print your last name!" );
-      }
+     if( document.getElementById('lastname').value.length == 0 ) {
+          alert( "Please print your last name!" );
+     }
+
+     if( document.getElementById("emailaddress").value.length == 0 ) {
+          alert( "Please enter your Email!" );
+}i
   }
 
   </script>
@@ -32,7 +36,7 @@
     <h1>Jason Dai's Portal</h1>
     <h2>About me</h2>
     <p>I am a grade 12 senior student in Fleetwood Park Secondary School</p>
-    <p>I enjoy learning new coding algorithms, they practices my logical thinking skills</p>
+    <p>I am looking forward to be studying in computer science</p>
     <p>I am currently building a website portfolio of my own</p>
 
     <form onsubmit="return validate()" method="post"> 
@@ -65,3 +69,4 @@
   </footer>
 
 </html>
+
